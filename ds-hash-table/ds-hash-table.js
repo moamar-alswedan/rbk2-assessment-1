@@ -5,11 +5,13 @@ var makeHashTable = function() {
   return {
     _storage: [],
     retrieve: function(key) {
+      var idx=hashFn(key,max)
       //your code is here
     },
 
     insert: function(key, value) {
-      //your code is here
+      var bucket=this._storage[key];
+      
   };
 };
 
